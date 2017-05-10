@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430B582B1EB17898005FA1FF /* FaceCaptureNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B582A1EB17898005FA1FF /* FaceCaptureNode.swift */; };
+		430B582D1EB1B400005FA1FF /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B582C1EB1B400005FA1FF /* AI.swift */; };
+		432047A11EAE2875008D2054 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047A01EAE2875008D2054 /* AppDelegate.swift */; };
+		432047A31EAE2875008D2054 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 432047A21EAE2875008D2054 /* art.scnassets */; };
+		432047A51EAE2875008D2054 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047A41EAE2875008D2054 /* GameViewController.swift */; };
+		432047A81EAE2875008D2054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432047A61EAE2875008D2054 /* Main.storyboard */; };
+		432047AA1EAE2875008D2054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432047A91EAE2875008D2054 /* Assets.xcassets */; };
+		432047AD1EAE2875008D2054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432047AB1EAE2875008D2054 /* LaunchScreen.storyboard */; };
+		432047B51EAE2906008D2054 /* AppMain.sks in Resources */ = {isa = PBXBuildFile; fileRef = 432047B41EAE2906008D2054 /* AppMain.sks */; };
+		432047C11EAE34C7008D2054 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047C01EAE34C7008D2054 /* GameView.swift */; };
+		432047C31EAE35B1008D2054 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047C21EAE35B1008D2054 /* AppMain.swift */; };
+		432047C51EAE3BC7008D2054 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047C41EAE3BC7008D2054 /* GameManager.swift */; };
+		432047C71EAE3DEF008D2054 /* Taichi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432047C61EAE3DEF008D2054 /* Taichi.swift */; };
+		432047CA1EAE3EF4008D2054 /* m01_casualwear_00_m.dae in Resources */ = {isa = PBXBuildFile; fileRef = 432047C81EAE3EF4008D2054 /* m01_casualwear_00_m.dae */; };
+		432047CE1EAE41E4008D2054 /* m01_casualwear_01_m.png in Resources */ = {isa = PBXBuildFile; fileRef = 432047CC1EAE41E4008D2054 /* m01_casualwear_01_m.png */; };
+		432047CF1EAE41E4008D2054 /* m01_face_00_m.png in Resources */ = {isa = PBXBuildFile; fileRef = 432047CD1EAE41E4008D2054 /* m01_face_00_m.png */; };
+		432047D11EAE43B1008D2054 /* m01@idle_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 432047D01EAE43B1008D2054 /* m01@idle_00.dae */; };
+		432713D61EB2DF4A00DC7FCE /* AppSceneAction.sks in Resources */ = {isa = PBXBuildFile; fileRef = 432713D51EB2DF4A00DC7FCE /* AppSceneAction.sks */; };
+		432713D81EB2F2CE00DC7FCE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432713D71EB2F2CE00DC7FCE /* Request.swift */; };
+		432713DA1EB2F84E00DC7FCE /* SceneEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432713D91EB2F84E00DC7FCE /* SceneEvents.swift */; };
+		432714031EB331BB00DC7FCE /* Book_3d_games.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713DC1EB331BB00DC7FCE /* Book_3d_games.tga */; };
+		432714041EB331BB00DC7FCE /* Book_Cisco.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713DD1EB331BB00DC7FCE /* Book_Cisco.tga */; };
+		432714051EB331BB00DC7FCE /* Book_Shelf_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713DE1EB331BB00DC7FCE /* Book_Shelf_NRM.tga */; };
+		432714061EB331BB00DC7FCE /* Book_Shelf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713DF1EB331BB00DC7FCE /* Book_Shelf.tga */; };
+		432714071EB331BB00DC7FCE /* Book_Unity.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E01EB331BB00DC7FCE /* Book_Unity.tga */; };
+		432714081EB331BB00DC7FCE /* Book_VR.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E11EB331BB00DC7FCE /* Book_VR.tga */; };
+		432714091EB331BB00DC7FCE /* Chair_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E21EB331BB00DC7FCE /* Chair_Dif.tga */; };
+		4327140A1EB331BB00DC7FCE /* Chair_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E31EB331BB00DC7FCE /* Chair_NRM.tga */; };
+		4327140B1EB331BB00DC7FCE /* Door.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E41EB331BB00DC7FCE /* Door.tga */; };
+		4327140C1EB331BB00DC7FCE /* ElectricalBox_Hight.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E51EB331BB00DC7FCE /* ElectricalBox_Hight.tga */; };
+		4327140D1EB331BB00DC7FCE /* ElectricalBox2_Nrm.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E61EB331BB00DC7FCE /* ElectricalBox2_Nrm.tga */; };
+		4327140E1EB331BB00DC7FCE /* Fan_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E71EB331BB00DC7FCE /* Fan_Dif.tga */; };
+		4327140F1EB331BB00DC7FCE /* Fiberglass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E81EB331BB00DC7FCE /* Fiberglass.tga */; };
+		432714101EB331BB00DC7FCE /* Glass_Tile.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713E91EB331BB00DC7FCE /* Glass_Tile.tga */; };
+		432714111EB331BB00DC7FCE /* Green_Board_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713EA1EB331BB00DC7FCE /* Green_Board_Dif.tga */; };
+		432714121EB331BB00DC7FCE /* Green_Board_NRM_1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713EB1EB331BB00DC7FCE /* Green_Board_NRM_1.tga */; };
+		432714131EB331BB00DC7FCE /* Lamp_Illum.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713EC1EB331BB00DC7FCE /* Lamp_Illum.tga */; };
+		432714141EB331BB00DC7FCE /* Lamp.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713ED1EB331BB00DC7FCE /* Lamp.tga */; };
+		432714151EB331BB00DC7FCE /* Metal_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713EE1EB331BB00DC7FCE /* Metal_Dif.tga */; };
+		432714161EB331BB00DC7FCE /* PC_Dif_1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713EF1EB331BB00DC7FCE /* PC_Dif_1.tga */; };
+		432714171EB331BB00DC7FCE /* PC_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F01EB331BB00DC7FCE /* PC_Dif.tga */; };
+		432714181EB331BB00DC7FCE /* PC_Emi.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F11EB331BB00DC7FCE /* PC_Emi.tga */; };
+		432714191EB331BB00DC7FCE /* PC_Illum_1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F21EB331BB00DC7FCE /* PC_Illum_1.tga */; };
+		4327141A1EB331BB00DC7FCE /* PC_Illum.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F31EB331BB00DC7FCE /* PC_Illum.tga */; };
+		4327141B1EB331BB00DC7FCE /* PC_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F41EB331BB00DC7FCE /* PC_NRM.tga */; };
+		4327141C1EB331BB00DC7FCE /* Posters.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F51EB331BB00DC7FCE /* Posters.tga */; };
+		4327141D1EB331BB00DC7FCE /* printer_NRM_1.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F61EB331BB00DC7FCE /* printer_NRM_1.tga */; };
+		4327141E1EB331BB00DC7FCE /* printer.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F71EB331BB00DC7FCE /* printer.tga */; };
+		4327141F1EB331BB00DC7FCE /* Projector_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F81EB331BB00DC7FCE /* Projector_NRM.tga */; };
+		432714201EB331BB00DC7FCE /* Projector_Screen.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713F91EB331BB00DC7FCE /* Projector_Screen.tga */; };
+		432714211EB331BB00DC7FCE /* Projector.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713FA1EB331BB00DC7FCE /* Projector.tga */; };
+		432714221EB331BB00DC7FCE /* Shelf_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713FB1EB331BB00DC7FCE /* Shelf_NRM.tga */; };
+		432714231EB331BB00DC7FCE /* Shelf.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713FC1EB331BB00DC7FCE /* Shelf.tga */; };
+		432714251EB331BB00DC7FCE /* stage.jas in Resources */ = {isa = PBXBuildFile; fileRef = 432713FE1EB331BB00DC7FCE /* stage.jas */; };
+		432714261EB331BB00DC7FCE /* Tables_Dif.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432713FF1EB331BB00DC7FCE /* Tables_Dif.tga */; };
+		432714271EB331BB00DC7FCE /* Tables_NRM.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432714001EB331BB00DC7FCE /* Tables_NRM.tga */; };
+		432714281EB331BB00DC7FCE /* Teachers_Board.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432714011EB331BB00DC7FCE /* Teachers_Board.tga */; };
+		432714291EB331BB00DC7FCE /* Wood.tga in Resources */ = {isa = PBXBuildFile; fileRef = 432714021EB331BB00DC7FCE /* Wood.tga */; };
+		4327142E1EB33E3F00DC7FCE /* AppMain.dae in Resources */ = {isa = PBXBuildFile; fileRef = 4327142D1EB33E3F00DC7FCE /* AppMain.dae */; };
+		433B25F91EBAD13500259F27 /* m01@greet_02.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B25F81EBAD13500259F27 /* m01@greet_02.dae */; };
+		433B25FE1EBB31A500259F27 /* m01@lookdown_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B25FA1EBB31A500259F27 /* m01@lookdown_00.dae */; };
+		433B25FF1EBB31A500259F27 /* m01@nod_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B25FB1EBB31A500259F27 /* m01@nod_00.dae */; };
+		433B26001EBB31A500259F27 /* m01@offerhug_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B25FC1EBB31A500259F27 /* m01@offerhug_00.dae */; };
+		433B26011EBB31A500259F27 /* m01@pathead_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B25FD1EBB31A500259F27 /* m01@pathead_00.dae */; };
+		433B26071EBB352700259F27 /* m01@wink_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B26021EBB352700259F27 /* m01@wink_00.dae */; };
+		433B26081EBB352700259F27 /* m01@salute_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B26031EBB352700259F27 /* m01@salute_00.dae */; };
+		433B26091EBB352700259F27 /* m01@refuse_01.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B26041EBB352700259F27 /* m01@refuse_01.dae */; };
+		433B260A1EBB352700259F27 /* m01@refuse_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B26051EBB352700259F27 /* m01@refuse_00.dae */; };
+		433B260B1EBB352700259F27 /* m01@reachout_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 433B26061EBB352700259F27 /* m01@reachout_00.dae */; };
+		435674BC1EAF5C9A0014D6A8 /* m01_face_010_m.png in Resources */ = {isa = PBXBuildFile; fileRef = 435674BB1EAF5C9A0014D6A8 /* m01_face_010_m.png */; };
+		435674BE1EAF5CA70014D6A8 /* m01_face_020_m.png in Resources */ = {isa = PBXBuildFile; fileRef = 435674BD1EAF5CA70014D6A8 /* m01_face_020_m.png */; };
+		437539771EBEF37600D2047F /* m01_face_030_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 437539761EBEF37600D2047F /* m01_face_030_l.png */; };
+		43BD9FD21EB0850C0076F6D5 /* m01@greet_00.dae in Resources */ = {isa = PBXBuildFile; fileRef = 43BD9FD11EB0850C0076F6D5 /* m01@greet_00.dae */; };
+		43BD9FD41EB0C3F80076F6D5 /* TextFrameNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BD9FD31EB0C3F80076F6D5 /* TextFrameNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		430B582A1EB17898005FA1FF /* FaceCaptureNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceCaptureNode.swift; sourceTree = "<group>"; };
+		430B582C1EB1B400005FA1FF /* AI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
+		4320479D1EAE2875008D2054 /* EKMensetsu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EKMensetsu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		432047A01EAE2875008D2054 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		432047A21EAE2875008D2054 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		432047A41EAE2875008D2054 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		432047A71EAE2875008D2054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		432047A91EAE2875008D2054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		432047AC1EAE2875008D2054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		432047AE1EAE2875008D2054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432047B41EAE2906008D2054 /* AppMain.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AppMain.sks; sourceTree = "<group>"; };
+		432047C01EAE34C7008D2054 /* GameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		432047C21EAE35B1008D2054 /* AppMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		432047C41EAE3BC7008D2054 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		432047C61EAE3DEF008D2054 /* Taichi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taichi.swift; sourceTree = "<group>"; };
+		432047C81EAE3EF4008D2054 /* m01_casualwear_00_m.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = m01_casualwear_00_m.dae; path = Assets/Taich/m01_casualwear_00_m.dae; sourceTree = "<group>"; };
+		432047CC1EAE41E4008D2054 /* m01_casualwear_01_m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m01_casualwear_01_m.png; path = Assets/Taich/m01_casualwear_01_m.png; sourceTree = "<group>"; };
+		432047CD1EAE41E4008D2054 /* m01_face_00_m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m01_face_00_m.png; path = Assets/Taich/m01_face_00_m.png; sourceTree = "<group>"; };
+		432047D01EAE43B1008D2054 /* m01@idle_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@idle_00.dae"; path = "Assets/Taich/m01@idle_00.dae"; sourceTree = "<group>"; };
+		432713D51EB2DF4A00DC7FCE /* AppSceneAction.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AppSceneAction.sks; sourceTree = "<group>"; };
+		432713D71EB2F2CE00DC7FCE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		432713D91EB2F84E00DC7FCE /* SceneEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneEvents.swift; sourceTree = "<group>"; };
+		432713DC1EB331BB00DC7FCE /* Book_3d_games.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_3d_games.tga; sourceTree = "<group>"; };
+		432713DD1EB331BB00DC7FCE /* Book_Cisco.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_Cisco.tga; sourceTree = "<group>"; };
+		432713DE1EB331BB00DC7FCE /* Book_Shelf_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_Shelf_NRM.tga; sourceTree = "<group>"; };
+		432713DF1EB331BB00DC7FCE /* Book_Shelf.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_Shelf.tga; sourceTree = "<group>"; };
+		432713E01EB331BB00DC7FCE /* Book_Unity.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_Unity.tga; sourceTree = "<group>"; };
+		432713E11EB331BB00DC7FCE /* Book_VR.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Book_VR.tga; sourceTree = "<group>"; };
+		432713E21EB331BB00DC7FCE /* Chair_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chair_Dif.tga; sourceTree = "<group>"; };
+		432713E31EB331BB00DC7FCE /* Chair_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chair_NRM.tga; sourceTree = "<group>"; };
+		432713E41EB331BB00DC7FCE /* Door.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Door.tga; sourceTree = "<group>"; };
+		432713E51EB331BB00DC7FCE /* ElectricalBox_Hight.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectricalBox_Hight.tga; sourceTree = "<group>"; };
+		432713E61EB331BB00DC7FCE /* ElectricalBox2_Nrm.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ElectricalBox2_Nrm.tga; sourceTree = "<group>"; };
+		432713E71EB331BB00DC7FCE /* Fan_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fan_Dif.tga; sourceTree = "<group>"; };
+		432713E81EB331BB00DC7FCE /* Fiberglass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fiberglass.tga; sourceTree = "<group>"; };
+		432713E91EB331BB00DC7FCE /* Glass_Tile.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glass_Tile.tga; sourceTree = "<group>"; };
+		432713EA1EB331BB00DC7FCE /* Green_Board_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Green_Board_Dif.tga; sourceTree = "<group>"; };
+		432713EB1EB331BB00DC7FCE /* Green_Board_NRM_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Green_Board_NRM_1.tga; sourceTree = "<group>"; };
+		432713EC1EB331BB00DC7FCE /* Lamp_Illum.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp_Illum.tga; sourceTree = "<group>"; };
+		432713ED1EB331BB00DC7FCE /* Lamp.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lamp.tga; sourceTree = "<group>"; };
+		432713EE1EB331BB00DC7FCE /* Metal_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Metal_Dif.tga; sourceTree = "<group>"; };
+		432713EF1EB331BB00DC7FCE /* PC_Dif_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_Dif_1.tga; sourceTree = "<group>"; };
+		432713F01EB331BB00DC7FCE /* PC_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_Dif.tga; sourceTree = "<group>"; };
+		432713F11EB331BB00DC7FCE /* PC_Emi.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_Emi.tga; sourceTree = "<group>"; };
+		432713F21EB331BB00DC7FCE /* PC_Illum_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_Illum_1.tga; sourceTree = "<group>"; };
+		432713F31EB331BB00DC7FCE /* PC_Illum.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_Illum.tga; sourceTree = "<group>"; };
+		432713F41EB331BB00DC7FCE /* PC_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = PC_NRM.tga; sourceTree = "<group>"; };
+		432713F51EB331BB00DC7FCE /* Posters.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Posters.tga; sourceTree = "<group>"; };
+		432713F61EB331BB00DC7FCE /* printer_NRM_1.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = printer_NRM_1.tga; sourceTree = "<group>"; };
+		432713F71EB331BB00DC7FCE /* printer.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = printer.tga; sourceTree = "<group>"; };
+		432713F81EB331BB00DC7FCE /* Projector_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projector_NRM.tga; sourceTree = "<group>"; };
+		432713F91EB331BB00DC7FCE /* Projector_Screen.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projector_Screen.tga; sourceTree = "<group>"; };
+		432713FA1EB331BB00DC7FCE /* Projector.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Projector.tga; sourceTree = "<group>"; };
+		432713FB1EB331BB00DC7FCE /* Shelf_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shelf_NRM.tga; sourceTree = "<group>"; };
+		432713FC1EB331BB00DC7FCE /* Shelf.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shelf.tga; sourceTree = "<group>"; };
+		432713FE1EB331BB00DC7FCE /* stage.jas */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = stage.jas; sourceTree = "<group>"; };
+		432713FF1EB331BB00DC7FCE /* Tables_Dif.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tables_Dif.tga; sourceTree = "<group>"; };
+		432714001EB331BB00DC7FCE /* Tables_NRM.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tables_NRM.tga; sourceTree = "<group>"; };
+		432714011EB331BB00DC7FCE /* Teachers_Board.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Teachers_Board.tga; sourceTree = "<group>"; };
+		432714021EB331BB00DC7FCE /* Wood.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wood.tga; sourceTree = "<group>"; };
+		4327142B1EB335B100DC7FCE /* floor_01_basecolor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor_01_basecolor.tga; sourceTree = "<group>"; };
+		4327142D1EB33E3F00DC7FCE /* AppMain.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = AppMain.dae; sourceTree = "<group>"; };
+		433B25F81EBAD13500259F27 /* m01@greet_02.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@greet_02.dae"; path = "Assets/Taich/m01@greet_02.dae"; sourceTree = "<group>"; };
+		433B25FA1EBB31A500259F27 /* m01@lookdown_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@lookdown_00.dae"; path = "Assets/Taich/m01@lookdown_00.dae"; sourceTree = "<group>"; };
+		433B25FB1EBB31A500259F27 /* m01@nod_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@nod_00.dae"; path = "Assets/Taich/m01@nod_00.dae"; sourceTree = "<group>"; };
+		433B25FC1EBB31A500259F27 /* m01@offerhug_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@offerhug_00.dae"; path = "Assets/Taich/m01@offerhug_00.dae"; sourceTree = "<group>"; };
+		433B25FD1EBB31A500259F27 /* m01@pathead_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@pathead_00.dae"; path = "Assets/Taich/m01@pathead_00.dae"; sourceTree = "<group>"; };
+		433B26021EBB352700259F27 /* m01@wink_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@wink_00.dae"; path = "Assets/Taich/m01@wink_00.dae"; sourceTree = "<group>"; };
+		433B26031EBB352700259F27 /* m01@salute_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@salute_00.dae"; path = "Assets/Taich/m01@salute_00.dae"; sourceTree = "<group>"; };
+		433B26041EBB352700259F27 /* m01@refuse_01.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@refuse_01.dae"; path = "Assets/Taich/m01@refuse_01.dae"; sourceTree = "<group>"; };
+		433B26051EBB352700259F27 /* m01@refuse_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@refuse_00.dae"; path = "Assets/Taich/m01@refuse_00.dae"; sourceTree = "<group>"; };
+		433B26061EBB352700259F27 /* m01@reachout_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@reachout_00.dae"; path = "Assets/Taich/m01@reachout_00.dae"; sourceTree = "<group>"; };
+		435674BB1EAF5C9A0014D6A8 /* m01_face_010_m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m01_face_010_m.png; path = Assets/Taich/m01_face_010_m.png; sourceTree = "<group>"; };
+		435674BD1EAF5CA70014D6A8 /* m01_face_020_m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = m01_face_020_m.png; path = Assets/Taich/m01_face_020_m.png; sourceTree = "<group>"; };
+		437539761EBEF37600D2047F /* m01_face_030_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m01_face_030_l.png; sourceTree = "<group>"; };
+		43BD9FD11EB0850C0076F6D5 /* m01@greet_00.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "m01@greet_00.dae"; path = "Assets/Taich/m01@greet_00.dae"; sourceTree = "<group>"; };
+		43BD9FD31EB0C3F80076F6D5 /* TextFrameNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFrameNode.swift; path = ../../../Module/TextFrameLayer/frameA/frameA/TextFrameNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4320479A1EAE2875008D2054 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430B582E1EB2372C005FA1FF /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				432047A41EAE2875008D2054 /* GameViewController.swift */,
+				432047C01EAE34C7008D2054 /* GameView.swift */,
+				432047C41EAE3BC7008D2054 /* GameManager.swift */,
+			);
+			name = Game;
+			sourceTree = "<group>";
+		};
+		432047941EAE2875008D2054 = {
+			isa = PBXGroup;
+			children = (
+				4320479F1EAE2875008D2054 /* EKMensetsu */,
+				4320479E1EAE2875008D2054 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4320479E1EAE2875008D2054 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4320479D1EAE2875008D2054 /* EKMensetsu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4320479F1EAE2875008D2054 /* EKMensetsu */ = {
+			isa = PBXGroup;
+			children = (
+				432047A01EAE2875008D2054 /* AppDelegate.swift */,
+				432047BB1EAE335B008D2054 /* taich */,
+				432047BA1EAE2A63008D2054 /* AppMain */,
+				432047A21EAE2875008D2054 /* art.scnassets */,
+				430B582E1EB2372C005FA1FF /* Game */,
+				43BD9FD31EB0C3F80076F6D5 /* TextFrameNode.swift */,
+				430B582A1EB17898005FA1FF /* FaceCaptureNode.swift */,
+				430B582C1EB1B400005FA1FF /* AI.swift */,
+				432713D71EB2F2CE00DC7FCE /* Request.swift */,
+				432047A61EAE2875008D2054 /* Main.storyboard */,
+				432047A91EAE2875008D2054 /* Assets.xcassets */,
+				432047AB1EAE2875008D2054 /* LaunchScreen.storyboard */,
+				432047AE1EAE2875008D2054 /* Info.plist */,
+			);
+			path = EKMensetsu;
+			sourceTree = "<group>";
+		};
+		432047BA1EAE2A63008D2054 /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+				432713DB1EB3318F00DC7FCE /* AppMainStage */,
+				432047C21EAE35B1008D2054 /* AppMain.swift */,
+				432713D91EB2F84E00DC7FCE /* SceneEvents.swift */,
+				432047B41EAE2906008D2054 /* AppMain.sks */,
+				432713D51EB2DF4A00DC7FCE /* AppSceneAction.sks */,
+			);
+			name = AppMain;
+			sourceTree = "<group>";
+		};
+		432047BB1EAE335B008D2054 /* taich */ = {
+			isa = PBXGroup;
+			children = (
+				432047C61EAE3DEF008D2054 /* Taichi.swift */,
+				432047C81EAE3EF4008D2054 /* m01_casualwear_00_m.dae */,
+				432047D01EAE43B1008D2054 /* m01@idle_00.dae */,
+				43BD9FD11EB0850C0076F6D5 /* m01@greet_00.dae */,
+				433B25F81EBAD13500259F27 /* m01@greet_02.dae */,
+				432047CC1EAE41E4008D2054 /* m01_casualwear_01_m.png */,
+				432047CD1EAE41E4008D2054 /* m01_face_00_m.png */,
+				435674BB1EAF5C9A0014D6A8 /* m01_face_010_m.png */,
+				435674BD1EAF5CA70014D6A8 /* m01_face_020_m.png */,
+				433B25FA1EBB31A500259F27 /* m01@lookdown_00.dae */,
+				433B25FB1EBB31A500259F27 /* m01@nod_00.dae */,
+				433B25FC1EBB31A500259F27 /* m01@offerhug_00.dae */,
+				433B25FD1EBB31A500259F27 /* m01@pathead_00.dae */,
+				433B26021EBB352700259F27 /* m01@wink_00.dae */,
+				437539761EBEF37600D2047F /* m01_face_030_l.png */,
+				433B26031EBB352700259F27 /* m01@salute_00.dae */,
+				433B26041EBB352700259F27 /* m01@refuse_01.dae */,
+				433B26051EBB352700259F27 /* m01@refuse_00.dae */,
+				433B26061EBB352700259F27 /* m01@reachout_00.dae */,
+			);
+			name = taich;
+			sourceTree = "<group>";
+		};
+		432713DB1EB3318F00DC7FCE /* AppMainStage */ = {
+			isa = PBXGroup;
+			children = (
+				432713DC1EB331BB00DC7FCE /* Book_3d_games.tga */,
+				432713DD1EB331BB00DC7FCE /* Book_Cisco.tga */,
+				432713DE1EB331BB00DC7FCE /* Book_Shelf_NRM.tga */,
+				432713DF1EB331BB00DC7FCE /* Book_Shelf.tga */,
+				432713E01EB331BB00DC7FCE /* Book_Unity.tga */,
+				432713E11EB331BB00DC7FCE /* Book_VR.tga */,
+				4327142B1EB335B100DC7FCE /* floor_01_basecolor.tga */,
+				432713E21EB331BB00DC7FCE /* Chair_Dif.tga */,
+				432713E31EB331BB00DC7FCE /* Chair_NRM.tga */,
+				432713E41EB331BB00DC7FCE /* Door.tga */,
+				432713E51EB331BB00DC7FCE /* ElectricalBox_Hight.tga */,
+				432713E61EB331BB00DC7FCE /* ElectricalBox2_Nrm.tga */,
+				432713E71EB331BB00DC7FCE /* Fan_Dif.tga */,
+				432713E81EB331BB00DC7FCE /* Fiberglass.tga */,
+				432713E91EB331BB00DC7FCE /* Glass_Tile.tga */,
+				432713EA1EB331BB00DC7FCE /* Green_Board_Dif.tga */,
+				432713EB1EB331BB00DC7FCE /* Green_Board_NRM_1.tga */,
+				432713EC1EB331BB00DC7FCE /* Lamp_Illum.tga */,
+				432713ED1EB331BB00DC7FCE /* Lamp.tga */,
+				432713EE1EB331BB00DC7FCE /* Metal_Dif.tga */,
+				4327142D1EB33E3F00DC7FCE /* AppMain.dae */,
+				432713EF1EB331BB00DC7FCE /* PC_Dif_1.tga */,
+				432713F01EB331BB00DC7FCE /* PC_Dif.tga */,
+				432713F11EB331BB00DC7FCE /* PC_Emi.tga */,
+				432713F21EB331BB00DC7FCE /* PC_Illum_1.tga */,
+				432713F31EB331BB00DC7FCE /* PC_Illum.tga */,
+				432713F41EB331BB00DC7FCE /* PC_NRM.tga */,
+				432713F51EB331BB00DC7FCE /* Posters.tga */,
+				432713F61EB331BB00DC7FCE /* printer_NRM_1.tga */,
+				432713F71EB331BB00DC7FCE /* printer.tga */,
+				432713F81EB331BB00DC7FCE /* Projector_NRM.tga */,
+				432713F91EB331BB00DC7FCE /* Projector_Screen.tga */,
+				432713FA1EB331BB00DC7FCE /* Projector.tga */,
+				432713FB1EB331BB00DC7FCE /* Shelf_NRM.tga */,
+				432713FC1EB331BB00DC7FCE /* Shelf.tga */,
+				432713FE1EB331BB00DC7FCE /* stage.jas */,
+				432713FF1EB331BB00DC7FCE /* Tables_Dif.tga */,
+				432714001EB331BB00DC7FCE /* Tables_NRM.tga */,
+				432714011EB331BB00DC7FCE /* Teachers_Board.tga */,
+				432714021EB331BB00DC7FCE /* Wood.tga */,
+			);
+			name = AppMainStage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4320479C1EAE2875008D2054 /* EKMensetsu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432047B11EAE2875008D2054 /* Build configuration list for PBXNativeTarget "EKMensetsu" */;
+			buildPhases = (
+				432047991EAE2875008D2054 /* Sources */,
+				4320479A1EAE2875008D2054 /* Frameworks */,
+				4320479B1EAE2875008D2054 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EKMensetsu;
+			productName = EKMensetsu;
+			productReference = 4320479D1EAE2875008D2054 /* EKMensetsu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		432047951EAE2875008D2054 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = naru;
+				TargetAttributes = {
+					4320479C1EAE2875008D2054 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 78B93KA42K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 432047981EAE2875008D2054 /* Build configuration list for PBXProject "EKMensetsu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 432047941EAE2875008D2054;
+			productRefGroup = 4320479E1EAE2875008D2054 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4320479C1EAE2875008D2054 /* EKMensetsu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4320479B1EAE2875008D2054 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432714091EB331BB00DC7FCE /* Chair_Dif.tga in Resources */,
+				432047A31EAE2875008D2054 /* art.scnassets in Resources */,
+				4327140E1EB331BB00DC7FCE /* Fan_Dif.tga in Resources */,
+				432714101EB331BB00DC7FCE /* Glass_Tile.tga in Resources */,
+				432047CA1EAE3EF4008D2054 /* m01_casualwear_00_m.dae in Resources */,
+				432714201EB331BB00DC7FCE /* Projector_Screen.tga in Resources */,
+				4327141C1EB331BB00DC7FCE /* Posters.tga in Resources */,
+				4327141F1EB331BB00DC7FCE /* Projector_NRM.tga in Resources */,
+				43BD9FD21EB0850C0076F6D5 /* m01@greet_00.dae in Resources */,
+				432714041EB331BB00DC7FCE /* Book_Cisco.tga in Resources */,
+				432714281EB331BB00DC7FCE /* Teachers_Board.tga in Resources */,
+				432714121EB331BB00DC7FCE /* Green_Board_NRM_1.tga in Resources */,
+				4327140D1EB331BB00DC7FCE /* ElectricalBox2_Nrm.tga in Resources */,
+				432714171EB331BB00DC7FCE /* PC_Dif.tga in Resources */,
+				433B26081EBB352700259F27 /* m01@salute_00.dae in Resources */,
+				432714051EB331BB00DC7FCE /* Book_Shelf_NRM.tga in Resources */,
+				433B26071EBB352700259F27 /* m01@wink_00.dae in Resources */,
+				432714161EB331BB00DC7FCE /* PC_Dif_1.tga in Resources */,
+				432047D11EAE43B1008D2054 /* m01@idle_00.dae in Resources */,
+				432047AD1EAE2875008D2054 /* LaunchScreen.storyboard in Resources */,
+				4327141D1EB331BB00DC7FCE /* printer_NRM_1.tga in Resources */,
+				433B25F91EBAD13500259F27 /* m01@greet_02.dae in Resources */,
+				432714061EB331BB00DC7FCE /* Book_Shelf.tga in Resources */,
+				4327140A1EB331BB00DC7FCE /* Chair_NRM.tga in Resources */,
+				4327141E1EB331BB00DC7FCE /* printer.tga in Resources */,
+				432714291EB331BB00DC7FCE /* Wood.tga in Resources */,
+				432714131EB331BB00DC7FCE /* Lamp_Illum.tga in Resources */,
+				435674BC1EAF5C9A0014D6A8 /* m01_face_010_m.png in Resources */,
+				4327141A1EB331BB00DC7FCE /* PC_Illum.tga in Resources */,
+				433B260B1EBB352700259F27 /* m01@reachout_00.dae in Resources */,
+				432714221EB331BB00DC7FCE /* Shelf_NRM.tga in Resources */,
+				433B26011EBB31A500259F27 /* m01@pathead_00.dae in Resources */,
+				432714031EB331BB00DC7FCE /* Book_3d_games.tga in Resources */,
+				432714261EB331BB00DC7FCE /* Tables_Dif.tga in Resources */,
+				435674BE1EAF5CA70014D6A8 /* m01_face_020_m.png in Resources */,
+				432713D61EB2DF4A00DC7FCE /* AppSceneAction.sks in Resources */,
+				432047AA1EAE2875008D2054 /* Assets.xcassets in Resources */,
+				433B25FE1EBB31A500259F27 /* m01@lookdown_00.dae in Resources */,
+				4327140B1EB331BB00DC7FCE /* Door.tga in Resources */,
+				432047CF1EAE41E4008D2054 /* m01_face_00_m.png in Resources */,
+				432714181EB331BB00DC7FCE /* PC_Emi.tga in Resources */,
+				432714251EB331BB00DC7FCE /* stage.jas in Resources */,
+				433B26001EBB31A500259F27 /* m01@offerhug_00.dae in Resources */,
+				432714081EB331BB00DC7FCE /* Book_VR.tga in Resources */,
+				433B260A1EBB352700259F27 /* m01@refuse_00.dae in Resources */,
+				4327142E1EB33E3F00DC7FCE /* AppMain.dae in Resources */,
+				432047B51EAE2906008D2054 /* AppMain.sks in Resources */,
+				432714111EB331BB00DC7FCE /* Green_Board_Dif.tga in Resources */,
+				437539771EBEF37600D2047F /* m01_face_030_l.png in Resources */,
+				432714191EB331BB00DC7FCE /* PC_Illum_1.tga in Resources */,
+				432047CE1EAE41E4008D2054 /* m01_casualwear_01_m.png in Resources */,
+				4327140C1EB331BB00DC7FCE /* ElectricalBox_Hight.tga in Resources */,
+				432714141EB331BB00DC7FCE /* Lamp.tga in Resources */,
+				432047A81EAE2875008D2054 /* Main.storyboard in Resources */,
+				432714071EB331BB00DC7FCE /* Book_Unity.tga in Resources */,
+				4327140F1EB331BB00DC7FCE /* Fiberglass.tga in Resources */,
+				433B26091EBB352700259F27 /* m01@refuse_01.dae in Resources */,
+				432714151EB331BB00DC7FCE /* Metal_Dif.tga in Resources */,
+				4327141B1EB331BB00DC7FCE /* PC_NRM.tga in Resources */,
+				432714211EB331BB00DC7FCE /* Projector.tga in Resources */,
+				432714271EB331BB00DC7FCE /* Tables_NRM.tga in Resources */,
+				433B25FF1EBB31A500259F27 /* m01@nod_00.dae in Resources */,
+				432714231EB331BB00DC7FCE /* Shelf.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		432047991EAE2875008D2054 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43BD9FD41EB0C3F80076F6D5 /* TextFrameNode.swift in Sources */,
+				430B582B1EB17898005FA1FF /* FaceCaptureNode.swift in Sources */,
+				430B582D1EB1B400005FA1FF /* AI.swift in Sources */,
+				432047A51EAE2875008D2054 /* GameViewController.swift in Sources */,
+				432047C71EAE3DEF008D2054 /* Taichi.swift in Sources */,
+				432047C11EAE34C7008D2054 /* GameView.swift in Sources */,
+				432047C51EAE3BC7008D2054 /* GameManager.swift in Sources */,
+				432713D81EB2F2CE00DC7FCE /* Request.swift in Sources */,
+				432047C31EAE35B1008D2054 /* AppMain.swift in Sources */,
+				432713DA1EB2F84E00DC7FCE /* SceneEvents.swift in Sources */,
+				432047A11EAE2875008D2054 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		432047A61EAE2875008D2054 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432047A71EAE2875008D2054 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		432047AB1EAE2875008D2054 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432047AC1EAE2875008D2054 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		432047AF1EAE2875008D2054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		432047B01EAE2875008D2054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		432047B21EAE2875008D2054 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78B93KA42K;
+				INFOPLIST_FILE = EKMensetsu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.EKMensetsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		432047B31EAE2875008D2054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 78B93KA42K;
+				INFOPLIST_FILE = EKMensetsu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = na.EKMensetsu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		432047981EAE2875008D2054 /* Build configuration list for PBXProject "EKMensetsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432047AF1EAE2875008D2054 /* Debug */,
+				432047B01EAE2875008D2054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432047B11EAE2875008D2054 /* Build configuration list for PBXNativeTarget "EKMensetsu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432047B21EAE2875008D2054 /* Debug */,
+				432047B31EAE2875008D2054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 432047951EAE2875008D2054 /* Project object */;
+}
