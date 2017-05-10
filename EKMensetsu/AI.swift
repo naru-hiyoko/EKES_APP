@@ -189,7 +189,7 @@ class AICloud
 //    let url = URL.init(string: "http://192.168.1.3:8000/cgi-bin/server.py")
     let url = URL.init(string: "http://192.168.1.4:21000/server.py")
     #else
-    let url = URL.init(string: "http://naruhiyoko.ddns.net:21000/server.py")
+    let url = URL.init(string: "http://.ddns.net:21000/server.py")
     #endif
     private var session : URLSession!
     
@@ -268,7 +268,7 @@ class AI : NSObject
     #if DEBUG
     static let register_url: URL = URL.init(string: "http://192.168.1.4/register.py")!
     #else
-    static let register_url: URL = URL.init(string: "http://naruhiyoko.ddns.net:21000/register.py")!
+    static let register_url: URL = URL.init(string: "http://.ddns.net:21000/register.py")!
     #endif
     
     
